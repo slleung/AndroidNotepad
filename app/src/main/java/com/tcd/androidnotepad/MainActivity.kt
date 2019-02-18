@@ -1,5 +1,6 @@
 package com.tcd.androidnotepad
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
@@ -14,7 +15,14 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener {
+            val noteActivity = Intent(this, NoteActivity::class.java)
+            startActivity(noteActivity)
         }
+
+        val fm = supportFragmentManager
+        fm.beginTransaction()
+            .replace(R.id.main_fragment, NoteListFragment())
+            .commit()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

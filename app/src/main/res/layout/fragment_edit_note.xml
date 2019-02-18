@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editNoteTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_margin="@dimen/title_box_margin"
+        android:hint="@string/title_hint_text"
+        android:inputType="text"
+        support:text="This is a very long title. Please make it horizontally scrollable." />
+
+    <EditText
+        android:id="@+id/editNoteBodyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/title_box_margin"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="@string/body_hint_text"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        support:text="This is a very long body. Please make it vertically scrollable." />
+
+</LinearLayout>

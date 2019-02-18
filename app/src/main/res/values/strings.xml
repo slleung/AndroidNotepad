@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">AndroidNotepad</string>
     <string name="action_settings">Settings</string>
+    <string name="app_name">AndroidNotepad</string>
+
+    <!-- edit note -->
+    <string name="body_hint_text">Body</string>
+    <string name="title_hint_text">Title</string>
 </resources>
